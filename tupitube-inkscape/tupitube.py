@@ -46,18 +46,22 @@ class PostAtTupitube(inkex.Effect):
         self.OptionParser.add_option('', '--description', action='store', type='string', dest='description', default='Just a little taste of my style :)', help='Works Description')
 
     def effect(self):
-        tupiVersion = self.options.version
-        workTitle = self.options.title
-        workTags = self.options.tags
-        workDescription = self.options.description
-        self.code = open(self.svg_file, 'r').read()
+        size = len(self.doc_ids)
+        if size > 5 :
+           tupiVersion = self.options.version
+           workTitle = self.options.title
+           workTags = self.options.tags
+           workDescription = self.options.description
+           self.code = open(self.svg_file, 'r').read()
 
-        params = urllib.urlencode(dict(version = tupiVersion, title = workTitle, tags = workTags, description = workDescription, svg = self.code))
-        f = urllib2.urlopen('http://tupitu.be/svg/upload/file', params)
-        url = f.read()
-        f.close()
+           params = urllib.urlencode(dict(version = tupiVersion, title = workTitle, tags = workTags, description = workDescription, svg = self.code))
+           f = urllib2.urlopen('http://tupitu.be/svg/upload/file', params)
+           url = f.read()
+           f.close()
 
-        webbrowser.open(url)
+           webbrowser.open(url)
+        else :
+           inkex.debug('Error: the file is empty. Please, try to draw something first ;)')
 
         sys.exit()
 
