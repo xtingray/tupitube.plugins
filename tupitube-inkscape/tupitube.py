@@ -55,7 +55,7 @@ class PostAtTupitube(inkex.Effect):
            self.code = open(self.svg_file, 'r').read()
 
            params = urllib.urlencode(dict(version = tupiVersion, title = workTitle, tags = workTags, description = workDescription, svg = self.code))
-           f = urllib2.urlopen('http://tupitu.be/svg/upload/file', params)
+           f = urllib2.urlopen('http://tupitu.be/v/upload/file', params)
            url = f.read()
            f.close()
 
