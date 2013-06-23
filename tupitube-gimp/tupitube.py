@@ -35,6 +35,7 @@ from cStringIO import StringIO
 import urllib
 import urllib2
 import webbrowser
+import tempfile
 
 from gimpfu import *
 
@@ -126,10 +127,10 @@ def plugin_main(timg, tdrawable, title, topics, description):
     url = f.read()
     f.close()
 
-    print "URL: " + url
-
-    if url.startswith('http:\/\/'):
+    if url.startswith('http'):
        webbrowser.open(url)
+    else:
+       pdb.gimp_message(url)
 
 register(
         "tupitube",
