@@ -113,7 +113,7 @@ def plugin_main(timg, tdrawable, title, topics, description):
     form.add_field('title', title)
     form.add_field('tags', topics)
     form.add_field('description', description)
-    form.add_file('xcf', xcf, fileHandle=StringIO('Gimp File'))
+    form.add_file('xcf', xcf, open(xcf), 'image/xcf')
 
     # Build the request
     request = urllib2.Request('http://tupitu.be/g/upload/file')
