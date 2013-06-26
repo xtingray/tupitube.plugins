@@ -1,5 +1,5 @@
 This package contains the scripts required by the _tupitu.be extension_ for
-Inkscape. This extension allow you to post and share your works in the 
+Inkscape. This extension allows you to post and share your works in the 
 tupitu.be website directly from the Inkscape interface.
 
 Note: If you haven't installed Inkscape already, you can download it 
@@ -14,7 +14,7 @@ LINUX
 - Copy the files tupitube.inx and tupitube.py within your user home, 
   specifically into the directory:
   ".config/inkscape/extensions"
-- Run inkscape from you Programs menu and draw anything you want to share
+- Run Inkscape from the Programs menu and draw anything you want to share
 - When you are done, go to Extensions -> Tupitu.be and fill the form
 - Press "Apply" and your work will be available from http://tupitu.be
 
@@ -24,7 +24,7 @@ MAC OSX
 - Uncompress the zip file and get in the directory tupitube-inkscape
 - Copy the files tupitube.inx and tupitube.py into the directory:
   "/Applications/Inkscape.app/Contents/Resources/extensions"
-- Run inkscape from you Programs menu and draw anything you want to share
+- Run Inkscape from the Programs menu and draw anything you want to share
 - When you are done, go to Extensions -> Tupitu.be and fill the form
 - Press "Apply" and your work will be available from http://tupitu.be
 
@@ -34,7 +34,7 @@ WINDOWS
 - Uncompress the zip file and get in the directory tupitube-inkscape 
 - Copy the files tupitube.inx and tupitube.py into the directory:
   "C:\Program Files\Inkscape\share\extensions"
-- Run inkscape from you Programs menu and draw anything you want to share 
+- Run Inkscape from the Programs menu and draw anything you want to share 
 - When you are done, go to Extensions -> Tupitu.be and fill the form
 - Press "Apply" and your work will be available from http://tupitu.be 
 

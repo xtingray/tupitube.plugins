@@ -1,0 +1,46 @@
+This package contains the script required by the _tupitu.be extension_ for
+Gimp. This extension allows you to post and share your works in the 
+tupitu.be website directly from the Gimp interface.
+
+Note: If you haven't installed Gimp already, you can download it 
+      from: http://www.gimp.org/downloads/
+
+Now, how do I install this extension in my computer?
+
+LINUX
+
+- Download the file tupitube-gimp.zip from http://www.tupitu.be/downloads
+- Uncompress the zip file and get in the directory tupitube-gimp
+- Copy the file tupitube.py within your user home, specifically into the 
+  directory:
+  ".gimp-2.8/plug-ins"
+- Run Gimp from the Programs menu and draw anything you want to share
+- When you are done, go to the menu Tools -> Post at Tupitu.be and fill 
+  the form
+- Press "Ok" and your work will be available from http://tupitu.be
+
+MAC OSX
+
+- Download the file tupitube-gimp.zip from http://www.tupitu.be/downloads
+- Uncompress the zip file and get in the directory tupitube-gimp
+- Copy the file tupitube.py within your user home, specifically into the 
+  directory:
+  ".gimp-2.8/plug-ins"
+- Run Gimp from the Programs menu and draw anything you want to share
+- When you are done, go to the menu Tools -> Post at Tupitu.be and fill 
+  the form
+- Press "Ok" and your work will be available from http://tupitu.be
+
+WINDOWS
+
+- Download the file tupitube-gimp.zip from http://www.tupitu.be/downloads 
+- Uncompress the zip file and get in the directory tupitube-gimp
+- Copy the file tupitube.py into the directory:
+  "C:\Program Files\lib\gimp\*version*\plug-ins"
+  *version* is a number and it depends on your version of Gimp
+- Run Gimp from the Programs menu and draw anything you want to share 
+- When you are done, go to Tools -> Post at Tupitu.be and fill the form
+- Press "Ok" and your work will be available from http://tupitu.be 
+
+Note: Remember to restart Gimp to get this plugin available from the 
+      Tools menu. 
