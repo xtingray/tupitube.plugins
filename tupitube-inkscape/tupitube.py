@@ -59,7 +59,11 @@ class PostAtTupitube(inkex.Effect):
            url = f.read()
            f.close()
 
-           webbrowser.open(url)
+           if url.startswith('http'):
+              webbrowser.open(url)
+           else:
+              inkex.debug(url)
+
         else :
            inkex.debug('Error: the file is empty. Please, try to draw something first ;)')
 
